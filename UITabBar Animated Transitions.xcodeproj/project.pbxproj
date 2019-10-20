@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		94621F0E235A971800D3DBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94621F0D235A971800D3DBC0 /* AppDelegate.swift */; };
 		94621F10235A971800D3DBC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94621F0F235A971800D3DBC0 /* SceneDelegate.swift */; };
-		94621F12235A971800D3DBC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94621F11235A971800D3DBC0 /* ViewController.swift */; };
+		94621F12235A971800D3DBC0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94621F11235A971800D3DBC0 /* TabBarController.swift */; };
 		94621F15235A971800D3DBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94621F13235A971800D3DBC0 /* Main.storyboard */; };
 		94621F18235A971800D3DBC0 /* UITabBar_Animated_Transitions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94621F16235A971800D3DBC0 /* UITabBar_Animated_Transitions.xcdatamodeld */; };
 		94621F1A235A971A00D3DBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94621F19235A971A00D3DBC0 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		94621F0A235A971800D3DBC0 /* UITabBar Animated Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabBar Animated Transitions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94621F0D235A971800D3DBC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94621F0F235A971800D3DBC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94621F11235A971800D3DBC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94621F11235A971800D3DBC0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		94621F14235A971800D3DBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94621F17235A971800D3DBC0 /* UITabBar_Animated_Transitions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITabBar_Animated_Transitions.xcdatamodel; sourceTree = "<group>"; };
 		94621F19235A971A00D3DBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				94621F0D235A971800D3DBC0 /* AppDelegate.swift */,
 				94621F0F235A971800D3DBC0 /* SceneDelegate.swift */,
-				94621F11235A971800D3DBC0 /* ViewController.swift */,
+				94621F11235A971800D3DBC0 /* TabBarController.swift */,
 				94621F13235A971800D3DBC0 /* Main.storyboard */,
 				94621F19235A971A00D3DBC0 /* Assets.xcassets */,
 				94621F1B235A971A00D3DBC0 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94621F12235A971800D3DBC0 /* ViewController.swift in Sources */,
+				94621F12235A971800D3DBC0 /* TabBarController.swift in Sources */,
 				94621F0E235A971800D3DBC0 /* AppDelegate.swift in Sources */,
 				94621F10235A971800D3DBC0 /* SceneDelegate.swift in Sources */,
 				94621F18235A971800D3DBC0 /* UITabBar_Animated_Transitions.xcdatamodeld in Sources */,

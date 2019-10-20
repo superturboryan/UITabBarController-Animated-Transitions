@@ -1,24 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDd-Dn-wUf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--VC 2-->
+        <scene sceneID="4cf-1J-pnO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="qhC-DF-F3S" userLabel="VC 2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Xz-60-wVb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Viu-uT-8vZ">
+                                <rect key="frame" x="115.5" y="306" width="144" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Viu-uT-8vZ" firstAttribute="centerX" secondItem="9Xz-60-wVb" secondAttribute="centerX" id="dND-7w-nXJ"/>
+                            <constraint firstItem="Viu-uT-8vZ" firstAttribute="centerY" secondItem="9Xz-60-wVb" secondAttribute="centerY" id="hjJ-xx-jYs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yyo-RO-gDK"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="VC 2" image="folder.fill" catalog="system" selectedImage="envelope.fill" id="IdB-83-MGh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8T-rw-V7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1558" y="-322"/>
+        </scene>
+        <!--VC 1-->
+        <scene sceneID="AJb-H6-Hhf">
+            <objects>
+                <viewController id="QDo-MA-Tll" userLabel="VC 1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wGv-OD-xvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNR-Dd-6r5">
+                                <rect key="frame" x="118.5" y="306" width="138.5" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VNR-Dd-6r5" firstAttribute="centerY" secondItem="wGv-OD-xvQ" secondAttribute="centerY" id="0Mf-UO-d8h"/>
+                            <constraint firstItem="VNR-Dd-6r5" firstAttribute="centerX" secondItem="wGv-OD-xvQ" secondAttribute="centerX" id="Ein-so-bvR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qpu-4x-liw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="VC 1" image="trash.fill" catalog="system" id="7yw-fN-tNC" userLabel="VC 1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IbG-AM-aXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="-1089"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ApE-TJ-9IP">
+            <objects>
+                <tabBarController id="LDd-Dn-wUf" customClass="TabBarController" customModule="UITabBar_Animated_Transitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pf3-3M-HZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QDo-MA-Tll" kind="relationship" relationship="viewControllers" id="Edl-Zi-bje"/>
+                        <segue destination="qhC-DF-F3S" kind="relationship" relationship="viewControllers" id="aw6-8P-YO7"/>
+                        <segue destination="YYh-zY-gVn" kind="relationship" relationship="viewControllers" id="9fC-IQ-8jB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqn-g8-mpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="-156"/>
+        </scene>
+        <!--VC 3-->
+        <scene sceneID="kln-pp-pOA">
+            <objects>
+                <viewController id="YYh-zY-gVn" userLabel="VC 3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46V-sl-bLL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04t-Rn-77y">
+                                <rect key="frame" x="115" y="306" width="145.5" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="04t-Rn-77y" firstAttribute="centerY" secondItem="46V-sl-bLL" secondAttribute="centerY" id="B0L-Jl-yAh"/>
+                            <constraint firstItem="04t-Rn-77y" firstAttribute="centerX" secondItem="46V-sl-bLL" secondAttribute="centerX" id="ljz-iC-kXh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A4t-pJ-7yD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Page 3" image="cloud.fill" catalog="system" id="U95-pQ-eqE"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-W5-EOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud.fill" catalog="system" width="64" height="42"/>
+        <image name="envelope.fill" catalog="system" width="64" height="46"/>
+        <image name="folder.fill" catalog="system" width="64" height="48"/>
+        <image name="trash.fill" catalog="system" width="58" height="64"/>
+    </resources>
 </document>
