@@ -11,7 +11,7 @@
         <scene sceneID="4cf-1J-pnO">
             <objects>
                 <viewController id="qhC-DF-F3S" userLabel="VC 2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Xz-60-wVb">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="9Xz-60-wVb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -30,6 +30,11 @@
                         <viewLayoutGuide key="safeArea" id="Yyo-RO-gDK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="VC 2" image="folder.fill" catalog="system" selectedImage="envelope.fill" id="IdB-83-MGh"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8T-rw-V7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,7 +44,7 @@
         <scene sceneID="AJb-H6-Hhf">
             <objects>
                 <viewController id="QDo-MA-Tll" userLabel="VC 1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wGv-OD-xvQ">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="wGv-OD-xvQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -58,6 +63,11 @@
                         <viewLayoutGuide key="safeArea" id="qpu-4x-liw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="VC 1" image="trash.fill" catalog="system" id="7yw-fN-tNC" userLabel="VC 1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbG-AM-aXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +86,8 @@
                         <segue destination="QDo-MA-Tll" kind="relationship" relationship="viewControllers" id="Edl-Zi-bje"/>
                         <segue destination="qhC-DF-F3S" kind="relationship" relationship="viewControllers" id="aw6-8P-YO7"/>
                         <segue destination="YYh-zY-gVn" kind="relationship" relationship="viewControllers" id="9fC-IQ-8jB"/>
+                        <segue destination="7Tm-A1-OnE" kind="relationship" relationship="viewControllers" id="X98-yI-Zbo"/>
+                        <segue destination="xMl-kn-h5P" kind="relationship" relationship="viewControllers" id="rPs-ep-4MS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqn-g8-mpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -86,7 +98,7 @@
         <scene sceneID="kln-pp-pOA">
             <objects>
                 <viewController id="YYh-zY-gVn" userLabel="VC 3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="46V-sl-bLL">
+                    <view key="view" tag="3" contentMode="scaleToFill" id="46V-sl-bLL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -106,10 +118,83 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Page 3" image="cloud.fill" catalog="system" id="U95-pQ-eqE"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-W5-EOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="434"/>
+        </scene>
+        <!--VC 4-->
+        <scene sceneID="JtM-ch-8Jk">
+            <objects>
+                <viewController id="7Tm-A1-OnE" userLabel="VC 4" sceneMemberID="viewController">
+                    <view key="view" tag="4" contentMode="scaleToFill" id="sn5-dr-bnd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPd-A7-sGI" userLabel="Page 4">
+                                <rect key="frame" x="114.5" y="306" width="146" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jPd-A7-sGI" firstAttribute="centerX" secondItem="sn5-dr-bnd" secondAttribute="centerX" id="GY5-dB-coZ"/>
+                            <constraint firstItem="jPd-A7-sGI" firstAttribute="centerY" secondItem="sn5-dr-bnd" secondAttribute="centerY" id="ZH0-Vj-L9X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XxK-1X-C69"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Page 3" image="cloud.fill" catalog="system" id="mRB-I4-Gax" userLabel="Page 4"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goM-iF-5NV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="1188"/>
+        </scene>
+        <!--VC 5-->
+        <scene sceneID="zdu-VM-9Fs">
+            <objects>
+                <viewController id="xMl-kn-h5P" userLabel="VC 5" sceneMemberID="viewController">
+                    <view key="view" tag="5" contentMode="scaleToFill" id="nRj-XU-WtB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xey-9Q-Vdf">
+                                <rect key="frame" x="115" y="306" width="145" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xey-9Q-Vdf" firstAttribute="centerX" secondItem="nRj-XU-WtB" secondAttribute="centerX" id="11f-b1-fTN"/>
+                            <constraint firstItem="xey-9Q-Vdf" firstAttribute="centerY" secondItem="nRj-XU-WtB" secondAttribute="centerY" id="UZx-kw-Has"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nlb-4s-jBS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Page 3" image="cloud.fill" catalog="system" id="Ovs-yT-7Es"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGe-wm-n69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="1942"/>
         </scene>
     </scenes>
     <resources>

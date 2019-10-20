@@ -32,17 +32,43 @@ extension TabBarController: UITabBarControllerDelegate, UIViewControllerAnimated
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let destination = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
+        
+        guard let currentVC = transitionContext.view(forKey: UITransitionContextViewKey.from) else { return }
+        
+        guard let destinationVC = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
+        
+        print("Going from \(currentVC.value(forKeyPath: "tag")!) to \(destinationVC.value(forKeyPath: "tag")!)")
 
-        destination.alpha = 0.0
-        destination.transform = .init(scaleX: 1.1, y: 1.1)
-        transitionContext.containerView.addSubview(destination)
+        destinationVC.alpha = 0.0
+        
+        let currentVCNumber = currentVC.value(forKeyPath: "tag") as! Int
+        let destinationVCNumber = destinationVC.value(forKeyPath: "tag") as! Int
+        
+        let goingToTheRight = currentVCNumber - destinationVCNumber < 0 ? true : false
+        
+        if (goingToTheRight) {
+            
+            destinationVC.transform = .init(translationX: destinationVC.frame.size.width, y: 0)
+        }
+        else { // goingToTheLeft ...
+            
+            destinationVC.transform = .init(translationX: -destinationVC.frame.size.width, y: 0)
+        }
+        
+//        destinationVC.transform = .init(scaleX: 0.7, y: 0.7)
+        
+        transitionContext.containerView.addSubview(destinationVC)
 
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-            destination.alpha = 1.0
-            destination.transform = .identity
+        UIView.animate(withDuration: 0.3, animations: {
+            
+//            currentVC.alpha = 0
+            
+            destinationVC.alpha = 1.0
+            destinationVC.transform = .identity
+            
         },
         completion: { transitionContext.completeTransition($0) })
+        
     }
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
