@@ -39,35 +39,36 @@ extension TabBarController: UITabBarControllerDelegate, UIViewControllerAnimated
         
         print("Going from \(currentVC.value(forKeyPath: "tag")!) to \(destinationVC.value(forKeyPath: "tag")!)")
 
-        destinationVC.alpha = 0.0
+//        destinationVC.alpha = 0.0
         
         let currentVCNumber = currentVC.value(forKeyPath: "tag") as! Int
         let destinationVCNumber = destinationVC.value(forKeyPath: "tag") as! Int
         
         let goingToTheRight = currentVCNumber - destinationVCNumber < 0 ? true : false
         
-        if (goingToTheRight) {
-            
-            destinationVC.transform = .init(translationX: destinationVC.frame.size.width, y: 0)
-        }
-        else { // goingToTheLeft ...
-            
-            destinationVC.transform = .init(translationX: -destinationVC.frame.size.width, y: 0)
-        }
+//        destinationVC.transform = .init(scaleX: 0.9, y: 0.9)
         
-//        destinationVC.transform = .init(scaleX: 0.7, y: 0.7)
+        destinationVC.transform = goingToTheRight ? .init(translationX: destinationVC.frame.size.width, y: 0) :
+        .init(translationX: -destinationVC.frame.size.width, y: 0)
         
         transitionContext.containerView.addSubview(destinationVC)
 
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+           
+            currentVC.transform = goingToTheRight ? .init(translationX: -destinationVC.frame.size.width, y: 0) :
+                                                    .init(translationX: destinationVC.frame.size.width, y: 0)
             
-//            currentVC.alpha = 0
-            
-            destinationVC.alpha = 1.0
             destinationVC.transform = .identity
             
-        },
-        completion: { transitionContext.completeTransition($0) })
+//            destinationVC.alpha = 1.0
+            
+        }) { (success) in
+            
+            currentVC.transform = .identity
+            
+            transitionContext.completeTransition(success)
+        
+        }
         
     }
 
